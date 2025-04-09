@@ -1,0 +1,75 @@
+h2 { /* este estilo afecta a todos los h2 de index2.html */
+font-size:60mc;
+color:rgba(0, 68, 255, 0.959) ;
+background-color:brown;
+
+
+
+
+}
+
+
+
+.textomorado { /* clases css que aplica color morado y fuente lusidaSans*/
+  color: blueviolet;
+font-family:Arial, Helvetica, sans-serif ;}
+
+.classeConteneDiv1 { /* afectara a algunos contenedores div*/  
+   font-size: 40px;
+width: 1200px;
+height: 600px;
+background-color: rgb(255, 230, 0);
+
+
+}
+
+#fondonaranja {
+    background-color: rgba(82, 100, 0, 0.849);
+    font-size: 30px;
+    text-align: center;
+}
+.textomorado:hover{
+ background-color: rgb(255, 0, 0);
+color: rgb(255, 0, 234);
+}
+ .classeConteneDiv1 ::first-letter  {
+/* seudoelelmento que afecta a la primera letra*/
+    font-size: 80px;
+     color: crimson;
+
+ }
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+  
+
+
+
+
+
+
