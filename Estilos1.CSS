@@ -133,10 +133,61 @@ height: 300px;
 }
 
 
+.tipoinlineblock{ /*estillo display inline*/
+background-color: rgb(165, 42, 42);
+font-style: 30px;
+margin: 10px;
+color: rgb(123, 255, 47);
+display: inline-block;
+width: 200px;
+}
+.enline{ /*estillo display inline*/
+background-color: red;
+display: inline;
+font-size: 30px;
+margin: 2px;
+color: beige;
+width: 80px;
+height: 40px;
+}
+.bloque{/*estillo display por defecto*/
+  background-color:blue;
+font-size: 20px;
+margin: 20px;
+color: aquamarine;
+}
+.tiponone{/*estillo display por none*/
+  background-color:blue;
+font-size: 20px;
+margin: 20px;
+color: aquamarine;
+display: none;
+}
+.tipohidden{/*estillo display hidden*/
+  background-color:blue;
+font-size: 20px;
+margin: 20px;
+color: aquamarine;
+display: hidden;
+}
+.tipoflex{
+display: flex;
+background-color: rgb(0, 217, 255);
+align-items: center;
+justify-content: space-between;
+}
+.clasenav{
+background-color: chartreuse;
+font-size: 30px;
+padding-inline: 0px;
+color: black;
+display: inline;
+list-style-type: none;
 
-
-
-
+}
+.clasenav a:hover{
+  background-color: chocolate;
+}
 
 
 
