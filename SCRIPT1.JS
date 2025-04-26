@@ -1,4 +1,4 @@
-function fcambiocolor(){
+function FCambioColor(){
 
 let vtexto1=document.getElementById("ejmDOM1");
 vtexto1.textContent= "texto cambiado por funcion fcambiocolor";
