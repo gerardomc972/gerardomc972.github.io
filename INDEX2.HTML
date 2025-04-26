@@ -4,6 +4,7 @@
      <meta charset="UTF-8">
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link rel="stylesheet" href="Estilos1.CSS">
+     <script type="tex/javascript" src="SCRIPT1.JS"></script>
      <title></title>
      
   <title>mi primera paginaweb</title>
@@ -463,35 +464,44 @@ height="200"  width="300">
 <br>
 
 
-<button type="submit" style="font-size:30px ;" > enviar </button>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+<button type="submit" style="font-size:60px ;" > enviar </button>
 
 </form>
 
+<div style="font-size: 30px;">contenedor resultado en java script
+<div id="reesultado" style="font-size:30px" >
+<p> operacion suma</p>
+</div>
+</div>
+<script>
 
+ window.alert("bienvenidos");//comando dde windows
+/* javascript acepta los 2 tipos de comentarios*/
+var valor1 = 20;
+var valor2 = 60;
+var suma = valor1 + valor2;
+var resta = valor1 - valor2;
+var multi = valor1 * valor2;
+var divicion = valor1 / valor2;
+document.write("<br>")
+console.log("el valor de la suma de",valor1, "con",valor2,"es" ,suma);
+console.log("el valor de la resta de",valor1, "con",valor2,"es" ,resta);
+console.log("el valor de la multipicaccion de",valor1, "con",valor2,"es" ,multi);
+console.log("el valor de la divicion de",valor1, "con",valor2,"es" ,divicion);
+document.getElementById("resultado").innerHTML
+="<br>el valor de la suma"+valor1+"con"+valor2+"es"+suma+"<br>"
++ "el valor de la resta"+valor1+"con"+valor2+"es"+resta;
+</script>
 
+<section>
+<h1 style="font-size: 40px;">manipulacion del dom</h1>
+<p id="ejmDOM1" style="font-size: 25px;">
+  este es un texto inicial a aplicar DOM
+</p>
+<button style="font-size: 25px;" onclick="fcambiocolor()">cambio de color 
+</button>
 
-
-
+</section>
 
 
 
