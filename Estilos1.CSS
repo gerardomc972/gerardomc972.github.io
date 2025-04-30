@@ -214,7 +214,11 @@ min-width: 140px;
 display: block;
 background-color: crimson;
 }
+#ejemDOM1{
 
+  color: rgb(210, 105, 30);
+  font-weight: bold;
+}
 
 
 
