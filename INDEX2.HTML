@@ -352,17 +352,20 @@ height="200"  width="300">
 <h2>formulario de registro</h2>
 
 <form action="todoelavance.HTML"  method="post">
-<p> <label for="nombre"> nombre:  <input type="text" id="nombre" required>  </label> </p>
-<p> <label for="apellido"> apellido: <input type="text" id="apellido">  </label> </p>
-<p> <label for="edad"> edad: <input type="text" id="edad" minlength="18" maxlength="100">  </label> </p>
+<p> <label for="nombre"> nombre:  <input type="text" id="nombre" name="nombre" class="datospersonales" required>  </label> </p>
+<p> <label for="apellido"> apellido: <input type="text" id="apellido" name="apellido" class="datospersonales">  </label> </p>
+<p> <label for="edad"> edad: <input type="number" id="edad" name="edad" class="datospersonales" min="18" max="80">  </label> </p>
 
 <p> <label for="observacion">observacion:
         <textarea name="observacion" id="observacion"
-        style="height: 180px;width: 300px;">
+        style="height: 180px;width: 300px; font-size: 25px;">
       </textarea>
-      </label> </p>
-<p>
+      </label>
+    </p>
 
+    <br>
+    <button style="font-size: 30px;" type="button" onclick="FCapturarNombre() "> Copiar Nombre a Observaciones </button>
+    <br> <br><br>
 
 
 
@@ -418,7 +421,7 @@ height="200"  width="300">
 
 
 <label for="clave"> SELECCIONE clave: 
-  <input style="font-size:15px" type="password" name="clave" id="clave"
+  <input style="font-size:15px" type="password" name="clave" id="clave" autofocus
  minlength="5" maxlength="10" >
 </label>
 
@@ -462,6 +465,10 @@ height="200"  width="300">
 
 
 <br>
+
+<br>
+    <button style="font-size: 30px;" type="button" onclick="FCapturarNombre() "> Copiar Nombre a Observaciones </button>
+    <br> <br><br>
 
 
 <button type="submit" style="font-size:60px ;" > enviar </button>
@@ -511,7 +518,20 @@ document.getElementById("resultado").innerHTML="<br>el valor de la suma"+valor1+
 </button>
 
 </section>
+<section> 
 
+  <h2> USO DE FOR clasico y condicionales en una class </h2>
+
+   <p class="classFOR1" style="font-size:25px ;">Texto 1 de classFOR1 [0]</p> 
+    <p class="classFOR1" style="font-size:25px ;">Texto 2 de classFOR1[1]</p>
+    <h2 class="classFOR1" style="font-size:25px ;">Texto 3 de classFOR1[2]</h2>
+    <h3 class="classFOR1" style="font-size:25px ;">Texto 4 de classFOR1[3]</h3>
+
+    <button style="font-size:25px ;" onclick="FUsoFor1()">
+       Reporte de classFOR1</button>
+    <button style="font-size:25px ;" onclick="FEliminarConcat()">
+        Eliminar concatenacion</button>   
+</section> 
 
 
 
