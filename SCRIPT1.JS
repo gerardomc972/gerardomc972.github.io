@@ -1,3 +1,4 @@
+
 let varGlobal1="texto de variable global";
 
 
@@ -65,7 +66,7 @@ function FEliminarConcat()
       }
     }
   //removeChild funciona cuando un nodo(class, id, etx) esta dentro de otro
-}0
+}
 
 function FCapturarNombre(){
 
@@ -84,7 +85,7 @@ function FCapturarNombre(){
   //foreach recorre todo el contenido del array de la clase datosPersonales
   vTexto2.forEach(input => {
       valor2 =valor2 +  `${input.name}: ${input.value}: ${input.id}      \n`;  // alt+96 
-    vTexto2.style.border="2px solid orange";
+    input.style.border="2px solid orange";
     //para comillas tipotexto permiten colocar variables del form y convertirlas a texto mediante $
     });
 
@@ -93,6 +94,119 @@ function FCapturarNombre(){
   console.log('El valor del nombre es:', valor1);
 
 }
+function FValidarCiclo(){
+  //var varciclo =document.getElementById("Segundo");
+  const varciclo =document.getElementsByName("ciclo");
+
+  for (let i = 0; i < varciclo.length; i++) {
+      if (varciclo[i].checked==true) {
+          //alert("Seleccionaste: " varciclo[i].value);
+          document.getElementById('observacion').value = varciclo[i].value;
+          return; // Detener el bucle una vez que se encuentre el seleccionado
+      }
+  }
+}
+document.addEventListener("DOMContentLoaded", () => {
+  const radio = document.querySelectorAll('input[name="ciclo"]');
+
+  radio.forEach(function(radio){
+      radio.addEventListener('change', function(event){
+          console.log("ciclo seleccionado:", event.target.value);
+          const cantidad = event.target.value;
+          //event es el evento, target es el elemento radio, value es su valor del radio 
+          // radio es el elemento radio
+          //
+          document.getElementById('Observacion').value = cantidad;
+      });
+  }
+);
+  
+  });
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
