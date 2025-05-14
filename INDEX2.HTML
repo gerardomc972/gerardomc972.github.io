@@ -369,6 +369,13 @@ height="200"  width="300">
 
     <button style="font-size: 30px;" type="button" onclick="FValidarCiclo()"> enviara ciclo del anterior </button>
     <br> <br><br>
+
+    <button style="font-size:30px ;" type="button" 
+    onclick="FCrearDatosCiclo() ">Enviar ciclo a observacion automatico</button>
+    <br> <br><br>
+    
+
+
 </p><label for="estatura">estatura
   <select name="grupoestatura" id="estatura">
 <option value="seleccione">seleccione></option>
@@ -377,11 +384,14 @@ height="200"  width="300">
 <option value="menor de 1.60 a 1.69m">de 1.60 a 1.69</option>
 <option value="mayor o igual a 1.70m">mayor o igual a 1.70</option>
   </select>
-
-
-
 </label>
 </p>
+<p style="font-size: 20px;"> <label for="numColegios"> Numero Colegios que estudió: 
+  <input type="number" id="numColegios" name="numColegios"  style="font-size: 20px;" min="1" max="12"> </label> </p>
+
+  <div id="DetalleColegios"> DEtalle Estudios: </div>
+
+
 
 <p><label>curso llevado</label>
   <br>
@@ -525,11 +535,11 @@ document.getElementById("resultado").innerHTML="<br>el valor de la suma"+valor1+
         Eliminar concatenacion</button>   
 </section> 
 
+</section> 
+<h2> actvidad para estudiantes</h2>
 
-
-
-
-
+<button style="font-size:25px ;" onclick="FVerificacion()">
+  verificacion de nombres</button>
 
 
 

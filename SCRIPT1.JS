@@ -123,10 +123,78 @@ document.addEventListener("DOMContentLoaded", () => {
   
   });
 
+function FVerificacion(){
+
+let nombre1 =prompt("ingresa tu primer nombre",'');
+let nombre2 =prompt("ingresa tu primer nombre",'');
+let apellido1 =prompt("ingresa tu primer apellido",'');
+let apellido2 =prompt("ingresa tu primer apellido",'');
+
+let longitud1 = nombre1.length;
+let longitud2 = nombre2.length;
+let longitudapellido1 = apellido1.length;
+let longitudapellido2 = apellido2.length;
+
+
+
+if(longitud1<longitud2)
+{
+  alert("el primer nombre:"+nombre1 +"es menor al segundo nombre:"+nombre2);
+
+textoconcat = nombre2 + nombre1; //concatenado y asignado a textoconcat
+}
+else
+{ if(longitud1 > longitud2)
+ {
+alert("el primer nombre:"+nombre1 +"es mayor al segundo nombre:"+nombre2);
+
+ }
+else //caso por defecto igual
+ {
+  alert("el primer nombre:"+nombre1 +"es igual en longitud al segundo nombre:"+ nombre2);
+  textoconcat = nombre2 + nombre1; //da lo mismo el orden de concatenado
+ }
+
+
+}
+////condicionales para apellido
+
+if(longitud1<longitud2)
+  {
+    alert("el primer apellido:"+apellido1 +"es menor al segundo apellido:"+ apellido2);
+  
+  textoconcat = apellido2 + apellido1; //concatenado y asignado a textoconcat
+  }
+  else
+  { if(longitudapellido1 > longitudapellido2)
+   {
+  alert("el primer apellido:"+apellido1 +"es mayor al segundo apellido:"+apellido2);
+  
+  textoconcat = apellido1 + apellido2; //concatenado y asignado a textoconcat
+   }
+  else //caso por defecto igual
+   {
+    alert("el primer apellido:"+apellido1 +"es igual en longitud al segundo apellido:"+ apellido2);
+    textoconcat = apellido1 + apellido2; //da lo mismo el orden de concatenado
+   }
+  
+  
+  }
 
 
 
 
+
+alert("apellido concatenados :"+textoconcat);
+
+
+
+
+
+
+
+
+}
 
 
 
